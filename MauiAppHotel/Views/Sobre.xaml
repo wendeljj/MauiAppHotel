@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray950}">
+    <VerticalStackLayout Padding="10" Margin="10" VerticalOptions="CenterAndExpand" BackgroundColor="{StaticResource Gray950}">
+        <Label TextColor="{StaticResource Beige}" Text="Sobre nós" TextTransform="Uppercase" FontSize="35" FontAttributes="Bold" FontFamily="ItimRegular" VerticalOptions="Center" HorizontalOptions="Center"/>
+        <Frame Padding="10">
+            <Label FontAttributes="Bold" FontFamily="Arial" FontSize="16" Text="Bem-vindo ao nosso aplicativo de cálculo de diárias! Nossa ferramenta foi projetada para facilitar a vida de quem busca uma experiência prática e intuitiva para planejar suas estadias. Com nosso aplicativo, você pode:
+Calcular o valor da diária de acordo com o número de adultos e crianças.
+Selecionar o tipo de suíte que melhor atende às suas necessidades.
+Escolher as datas de check-in e check-out, garantindo uma visão clara dos dias de estadia.
+Nosso objetivo é proporcionar uma experiência rápida e sem complicações, para que você possa focar no que realmente importa: aproveitar sua estadia. Seja para uma viagem de lazer ou negócios, estamos aqui para ajudar você a fazer as melhores escolhas de forma simples e eficiente."/>
+        </Frame>
+
+        <VerticalStackLayout Margin="20">
+            <Button BackgroundColor="{StaticResource Beige}" Text="Voltar" TextColor="Black" TextTransform="Uppercase" FontAttributes="Bold" FontFamily="ItimRegular" FontSize="15" />
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
