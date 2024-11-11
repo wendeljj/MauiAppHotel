@@ -16,7 +16,7 @@ Nosso objetivo é proporcionar uma experiência rápida e sem complicações, pa
         </Frame>
 
         <VerticalStackLayout Margin="20">
-            <Button BackgroundColor="{StaticResource Beige}" Text="Voltar" TextColor="Black" TextTransform="Uppercase" FontAttributes="Bold" FontFamily="ItimRegular" FontSize="15" />
+            <Button BackgroundColor="{StaticResource Beige}" Text="Voltar" TextColor="Black" TextTransform="Uppercase" FontAttributes="Bold" FontFamily="ItimRegular" FontSize="15" Clicked="Button_Clicked" />
         </VerticalStackLayout>
 
     </VerticalStackLayout>

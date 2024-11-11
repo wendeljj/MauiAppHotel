@@ -13,8 +13,7 @@
             TextColor="{StaticResource Beige}"
             FontSize="38"
             FontFamily="ItimRegular"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"/>
+            VerticalTextAlignment="Center"/>
         <Frame Padding="10" BackgroundColor="{StaticResource White}">
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *, 2*">
@@ -24,18 +23,18 @@
                     <Label Padding ="10" Grid.Row="1" Grid.Column="1" FontAttributes="Bold" Text="{Binding Value}" BindingContext="{x:Reference stepper_child}" TextColor="{StaticResource Beige}"/>
 
                     <Stepper x:Name="stepper_adult" Grid.Row="0" Grid.Column="2" Maximum="9" Minimum="0" Increment="1"/>
-                    <Stepper x:Name="stepper_child" Grid.Row="1" Grid.Column="2" Maximum="9" Minimum="0" Increment="1" />
+                    <Stepper x:Name="stepper_child" Grid.Row="1" Grid.Column="2" Maximum="9" Minimum="0" Increment="1"/>
                 </Grid>
 
                 <Label Text="Escolha uma Suíte" FontSize="20" TextTransform="Uppercase" TextColor="{StaticResource Beige}" FontFamily="ItimRegular"/>
-                <Picker x:Name="pick_suite" Title="SELECIONE SUA ACOMODAÇÃO:" FontAttributes="Bold"/>
+                <Picker x:Name="pick_suite" Title="SELECIONE SUA ACOMODAÇÃO:" FontAttributes="Bold" ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame Padding="10" Margin="10">
                     <VerticalStackLayout>
                         <Label Text="Período da estadia" TextTransform="Uppercase"/>
                         <HorizontalStackLayout Spacing="28">
                             <Label VerticalOptions="Center" Text="Check-in" TextColor="{StaticResource Beige}" FontAttributes="Bold" TextTransform="Uppercase" FontFamily="ItimRegular" FontSize="15"/>
-                            <DatePicker x:Name="datein_picker" Format="dd/MM/yyyy"/>
+                            <DatePicker x:Name="datein_picker" Format="dd/MM/yyyy" DateSelected="datein_picker_DateSelected"/>
                         </HorizontalStackLayout>
                         
                         <HorizontalStackLayout Spacing="12">
@@ -46,8 +45,8 @@
                 </Frame>
 
                 <VerticalStackLayout Spacing="12">
-                    <Button Text="Avançar" BackgroundColor="{StaticResource Beige}" TextColor="Black" TextTransform="Uppercase" FontAttributes="Bold" FontSize="15" FontFamily="ItimRegular" WidthRequest="300"/>
-                    <Button x:Name="btn_sobre" Text="Sobre" BackgroundColor="{StaticResource Beige}" TextColor="Black" TextTransform="Uppercase" FontAttributes="Bold" FontSize="15" FontFamily="ItimRegular" WidthRequest="100" Clicked="Button_Clicked"/>
+                    <Button Text="Avançar" BackgroundColor="{StaticResource Beige}" TextColor="Black" TextTransform="Uppercase" FontAttributes="Bold" FontSize="15" FontFamily="ItimRegular" WidthRequest="300" Clicked="Button_Clicked_1"/>
+                    <Button x:Name="btn_sobre" Text="Sobre" BackgroundColor="{StaticResource Beige}" TextColor="Black" TextTransform="Uppercase" FontAttributes="Bold" FontSize="15" FontFamily="ItimRegular" WidthRequest="100" Clicked="btn_sobre_Clicked"/>
                 </VerticalStackLayout>
 
             </VerticalStackLayout>
