@@ -41,8 +41,8 @@
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" TextColor="{StaticResource Beige}" TextTransform="Uppercase" FontAttributes="Bold" />
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" TextColor="{StaticResource Beige}" TextTransform="Uppercase" FontAttributes="Bold" />
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024" FontAttributes="Bold" />
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024" FontAttributes="Bold" />
+                <Label Grid.Row="1" Grid.Column="0" Text="11/11/2024" FontAttributes="Bold" />
+                <Label Grid.Row="1" Grid.Column="1" Text="12/11/2024" FontAttributes="Bold" />
                 <Label Grid.Row="1" Grid.Column="2" Text="3" FontAttributes="Bold" />
             </Grid>
         </Frame>
